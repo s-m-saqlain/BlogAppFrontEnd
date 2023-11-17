@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLocation, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
+import Popupbox from './Popupbox';
 // import Blogpost from './Blogpost';
 
 const Blogpost = () => {
@@ -43,10 +44,29 @@ const Blogpost = () => {
       fetchData();
     }, [categoryId]);
 
+
+
+    const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
+
+
   return (
     <>
     <p>Category ID: {id}  </p>
+    <br /><br /><br /><br /><br /><br />
+    <div className='container'>
+      <button className='btn btn-primary' onClick={openPopup}>Add BlogPost</button>
 
+      <Popupbox isOpen={isPopupOpen} onClose={closePopup} />
+    </div>
+    
     {data ? (
           <ul>
             {data.map((item) => {return(
