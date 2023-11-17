@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 // import Blogpost from './Blogpost';
@@ -8,7 +8,7 @@ const Blogpost = () => {
 
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
-
+    const {id} = useParams()
     const location = useLocation();
     console.log(location)
 
@@ -25,11 +25,13 @@ const Blogpost = () => {
           if (!token) {
             throw new Error('Token not found in local storage');
           }
-  
-          const response = await axios.get('https://blogappproject2.pythonanywhere.com/userapi/blog_post/', {
+          //  const formdata = new FormData()
+          //  formdata.append('category_id',id)
+          const response = await axios.get(`https://blogappproject2.pythonanywhere.com/userapi/blog_post/?category_id=${id}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
+
           });
   
           setData(response.data.data);
@@ -43,12 +45,34 @@ const Blogpost = () => {
 
   return (
     <>
-    <p>Category ID: {categoryId}</p>
+    <p>Category ID: {id}  </p>
 
     {data ? (
           <ul>
             {data.map((item) => {return(
-              <li key={item.id}>{item.title}</li>
+              <div className="card m-5" style={{ width: "48rem" }}>
+              <div className="card-body">
+                <span className="card-title" style={{fontSize:'20px'}}>Post By : {item.full_name}</span>
+                <span className="card-title px-5"  style={{fontSize:'20px'}}>Date : {item.created_at}</span>
+                <p className="card-title pt-4" style={{fontSize:'19px'}}>Title : {item.title}</p>
+                <p className="card-text" style={{fontSize:'17px'}}>Content : {item.content}</p>
+              </div>
+              {/* <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul> */}
+              {/* <div className="card-body">
+                <Link to="#" className="card-link">
+                  Card link
+                </Link>
+                <Link to="#" className="card-link">
+                  Another link
+                </Link>
+              </div> */}
+            </div>
+            
+              // <li key={item.id}>{item.title}</li>
             )})}
           </ul>
         ) : (

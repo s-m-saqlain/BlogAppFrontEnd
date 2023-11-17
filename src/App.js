@@ -11,7 +11,8 @@ function App() {
     <Routes>
       <Route path='/' Component={Login}/>
       <Route path='/Home' Component={Home}/>
-      <Route path='/BlogPost' Component={Blogpost}/>
+      <Route path='/BlogPost/:id' Component={Blogpost}/>
+      {/* <Route path='/BlogPost/:id' Component={}/> */}
     </Routes>
    </Router>
    </>

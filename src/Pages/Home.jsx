@@ -53,10 +53,7 @@ const Home = () => {
         {data ? (
           <ul>
             {data.map((item) => {return(
-              <li key={item.id}><Link to={{
-                pathname: '/Blogpost',
-                state: { categoryId: item.id }
-              }}>{item.name}</Link></li>
+              <li key={item.id}><Link to={`/Blogpost/${item.id}`}>{item.name}</Link></li>
             )})}
           </ul>
         ) : (
