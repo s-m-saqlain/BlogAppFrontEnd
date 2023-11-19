@@ -190,7 +190,7 @@ const Signup = () => {
                   </div>
                   <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
                     <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                      src="https://thumbs.dreamstime.com/z/content-marketing-blogging-smm-concept-flat-design-blog-page-fill-out-articles-media-materials-uploading-process-115293520.jpg?w=768"
                       className="img-fluid"
                       alt="Sampleimage"
                     />
