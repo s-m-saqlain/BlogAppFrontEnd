@@ -132,8 +132,6 @@ const Login = () => {
                           </div>
                           <Link to="/Signup">Please Register Here</Link><br></br><br></br>
   
-                          <Link to="ForgotPass">Forgot Password</Link>
-  
                           <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                             <button
                               type="submit"
