@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+# output
+
+![Screenshot (87)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/ebbc938b-ee21-4e46-8ee0-a9f815720869)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
