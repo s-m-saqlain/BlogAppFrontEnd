@@ -3,8 +3,8 @@ import Login from './Pages/Login';
 import Home from './Pages/Home';
 import Blogpost from './Pages/Blogpost';
 import CommentPage from './Pages/CommentPage';
-import Logout from './Pages/Logout';
 import Signup from './Pages/Signup';
+import LLogout from './Pages/LLogout';
 
 
 function App() {
@@ -17,8 +17,7 @@ function App() {
       <Route path='/Home' Component={Home}/>
       <Route path='/BlogPost/:id' Component={Blogpost}/>
       <Route path='/CommentPage/:id' Component={CommentPage}/>
-      <Route path='/Logout' Component={Logout}/>
-      {/* <Route path='/BlogPost/:id' Component={}/> */}
+      <Route path='/LLogout' Component={LLogout}/>
     </Routes>
    </Router>
    </>

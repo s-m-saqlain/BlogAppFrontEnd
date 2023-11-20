@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 import Blogpost from './Blogpost';
+import LLogout from './LLogout';
 
 const Home = () => {
     const [data, setData] = useState(null);
@@ -35,21 +36,9 @@ const Home = () => {
   return (
     <>
     <div className='container pt-5'>
-        <h1>Best types of blogs to create:</h1>
+        <h1>Best types of blogs to create:<span style={{marginLeft:'320px'}}><LLogout /></span></h1>
+        
       <br></br><br></br><br></br>
-      {/* {data ? (
-          <ul>
-            {data.map((item) => {return(
-              <li key={item.id}><Link to={{
-                pathname: '/Blogpost',
-                state: { categoryId: item.id }
-              }}>{item.name}</Link></li>
-            )})}
-          </ul>
-        ) : (
-          <p>Loading...</p>
-        )} */}
-
         {data ? (
           <ul>
             {data.map((item) => {return(

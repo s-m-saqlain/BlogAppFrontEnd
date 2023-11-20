@@ -4,8 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Blogpost from './Blogpost';
 
 const Popupbox = ({ isOpen, onClose, id}) => {
-    
-    // const {id} = id;    
+   
     const navigate = useNavigate();
 
     const [text1, setText1] = useState('');
@@ -32,9 +31,7 @@ const Popupbox = ({ isOpen, onClose, id}) => {
           });
           console.log(response.data)
           onClose();
-          
-          //Reload the Page
-
+    
          window.location.reload();
 
         } catch (error) {
@@ -48,7 +45,6 @@ const Popupbox = ({ isOpen, onClose, id}) => {
                 <div className={`popup-overlay d-flex justify-content-center ${isOpen ? 'visible' : 'hidden'}`}>
                     <div className="popup">
                         <div className="card" style={{ width: '34rem', marginRight: '5px' }}>
-                            {/* <img className="card-img-top" src="..." alt="Card image cap" /> */}
                             <div className="card-body">
                                 <label for="exampleFormControlTextarea1">Blog Title : &nbsp;</label>
                                 <input type="text" name="title" placeholder='Enter Title' value={text1} onChange={(e) => setText1(e.target.value)} style={{ width: '100%' }} />

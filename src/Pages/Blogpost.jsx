@@ -3,10 +3,10 @@ import { useLocation, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 import Popupbox from './Popupbox';
-// import Blogpost from './Blogpost';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
 import Commentpopupbox from './Commentpopupbox';
+import LLogout from './LLogout';
 
 const Blogpost = (a) => {
 
@@ -18,7 +18,7 @@ const Blogpost = (a) => {
   const location = useLocation();
   console.log(location)
 
-  // const categoryId = location.state?.categoryId;
+
   console.log(id)
 
   useEffect(() => {
@@ -63,12 +63,12 @@ const Blogpost = (a) => {
     setPopupOpen(false);
   };
 
-  // Comment Popup
-
   const [isPopupOpenComment, setPopupOpenComment] = useState(false);
 
   return (
     <>
+    <br />
+    <span style={{marginLeft:'1000px'}}><LLogout /></span>
       <br /><br /><br /><br /><br /><br />
       <div className='container'>
         <button className='btn btn-primary' onClick={openPopup}>Add BlogPost</button>

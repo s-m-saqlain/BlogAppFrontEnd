@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLocation, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
+import LLogout from './LLogout';
 
 const CommentPage = () => {
     const navigate = useNavigate();
@@ -16,7 +17,6 @@ const CommentPage = () => {
     const location = useLocation();
     console.log(location)
   
-    // const categoryId = location.state?.categoryId;
     console.log(id)
   
     useEffect(() => {
@@ -47,8 +47,6 @@ const CommentPage = () => {
       fetchData();
     }, [id]);
 
-
-
     const handleAddBlogApp = async () => {
         try {
         
@@ -68,8 +66,6 @@ const CommentPage = () => {
             },
           });
           console.log(response.data)
-          
-          //Reload the Page
 
          window.location.reload();
 
@@ -81,7 +77,8 @@ const CommentPage = () => {
 
   return (
     <>
-
+    <br />
+    <span style={{marginLeft:'1000px'}}><LLogout /></span>
     {data ? (
         <ul>
           {data.post.map((item) => {
@@ -146,8 +143,7 @@ const CommentPage = () => {
         <button className='btn btn-primary ml-5' onClick={handleAddBlogApp}>Comment</button>
       </span>
       </div>
-     
-      
+
     </>
   )
 }

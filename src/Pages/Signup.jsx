@@ -31,7 +31,7 @@ const Signup = () => {
       try {
         const response = await axios.post(
           "https://blogappproject2.pythonanywhere.com/userauth/signup/",
-          values // Sending the form values directly
+          values 
         );
         action.resetForm();
 
