@@ -5,6 +5,54 @@
 ![Screenshot (87)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/ebbc938b-ee21-4e46-8ee0-a9f815720869)
 
 
+![Screenshot (88)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/2b69b8ea-0543-4a70-8f9b-043e61f77355)
+
+
+![Screenshot (89)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/b31b7c1e-916c-4123-b8c0-74f6ea92ee69)
+
+
+![Screenshot (90)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/abadd84f-5f07-41a7-bb2e-82ffc9014b82)
+
+
+
+![Screenshot (91)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/05c05293-e0d6-4bea-a3ea-c711353bb2b4)
+
+
+![Screenshot (92)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/f5c26eda-d347-481c-a1f4-670cd720a318)
+
+
+
+
+![Screenshot (93)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/11e38d74-767c-4602-b5ab-ef23e62da85d)
+
+
+
+
+
+![Screenshot (94)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/98f03a66-b6ce-4b03-a222-6f3fa589ab78)
+
+
+
+
+![Screenshot (95)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/ccc99fae-2de5-4c6d-824b-1d76fc71cfb1)
+
+
+
+
+![Screenshot (96)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/632691a9-6a4c-4ab5-9136-740b466c81d6)
+
+
+
+
+![Screenshot (97)](https://github.com/s-m-saqlain/BlogAppFrontEnd/assets/107604970/7a9cc081-375d-4aa8-a64d-6f1981a3dab4)
+
+
+
+
+![Uploading Screenshot (98).png…]()
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
